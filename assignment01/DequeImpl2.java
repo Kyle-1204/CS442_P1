@@ -1,9 +1,9 @@
 package assignment01;
 
-public class Dequelmpl2<E> extends DLlist<E> implements Deque<E>{ //Class Adapter
+public class DequeImpl2<E> extends DLlist<E> implements Deque<E>{ //Class Adapter
 
     //No need to instantiate a list here
-    public Dequelmpl2(){
+    public DequeImpl2(){
         //DLlist<String> list;
     }
 

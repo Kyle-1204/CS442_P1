@@ -3,8 +3,8 @@ package assignment01;
 public class TestDrive {
     public static void main(String[] args){
         DLlist<String> adaptee = new DLlist<String>();
-        Deque<String> adaptar1 = new Dequelmpl1<>(adaptee); //object adapter
-        Deque<String> adaptar2 = new Dequelmpl2<>(); //class adapter
+        Deque<String> adaptar1 = new DequeImpl1<>(adaptee); //object adapter
+        Deque<String> adaptar2 = new DequeImpl2<>(); //class adapter
 
         //object adaptar test
         adaptar1.addLast("two");

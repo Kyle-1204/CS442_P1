@@ -2,18 +2,18 @@ package assignment01;
 
 //import assignment01.DLlist;
 
-public class Dequelmpl1<E> implements Deque<E> { //Object Adapter
+public class DequeImpl1<E> implements Deque<E> { //Object Adapter
     
-    private E e; //Use our generic type!
+    //private E e; //Use our generic type!
     private DLlist<E> list; //Avoid raw typing by chaining our generic
     //If I were to not use "new" here then we have not allocated this object to memory
 
-    public Dequelmpl1() {
+    public DequeImpl1() {
         list = new DLlist<>();
         //new DLlist<>(); and new DLlist<E>(); are equivlent
     }
 
-    public Dequelmpl1(DLlist<E> newList) {
+    public DequeImpl1(DLlist<E> newList) {
         //this.e = generic;
         list = newList;
     }
