@@ -1,4 +1,4 @@
-package CS442.CS442_P1.assignment01;
+package assignment01;
 
 public interface Deque<E> { //Target Interface
 	/**

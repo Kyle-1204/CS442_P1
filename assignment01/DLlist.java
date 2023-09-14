@@ -1,4 +1,4 @@
-package CS442.CS442_P1.assignment01;
+package assignment01;
 
 public class DLlist<E> { //Adaptee //Incompatible Interface
 	static class Node<E> {

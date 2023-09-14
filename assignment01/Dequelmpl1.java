@@ -1,6 +1,6 @@
-package CS442.CS442_P1.assignment01;
+package assignment01;
 
-import CS442.CS442_P1.assignment01.DLlist;
+//import assignment01.DLlist;
 
 public class Dequelmpl1<E> implements Deque<E> { //Object Adapter
     
@@ -13,9 +13,9 @@ public class Dequelmpl1<E> implements Deque<E> { //Object Adapter
         //new DLlist<>(); and new DLlist<E>(); are equivlent
     }
 
-    public Dequelmpl1(E generic) {
-        this.e = generic;
-        list = new DLlist<>();
+    public Dequelmpl1(DLlist<E> newList) {
+        //this.e = generic;
+        list = newList;
     }
 
     public void addLast(E e) {
