@@ -7,6 +7,9 @@ public class TestDrive {
         Deque<String> adaptar2 = new DequeImpl2<>(); //class adapter
 
         //object adaptar test
+        System.out.println(adaptar1.peekLast()); //should be null
+        System.out.println(adaptar1.peek()); //should be null
+        adaptar1.pollLast(); //remove last element
         adaptar1.addLast("two");
         adaptar1.addFirst("one");
         adaptar1.addLast("three");
@@ -17,8 +20,11 @@ public class TestDrive {
         adaptar1.poll(); //remove first element
         System.out.println(adaptar1.peek()); //should be 2
 
+        System.out.println(); 
 
         //class adaptar test
+        System.out.println(adaptar2.peekLast()); //should be null
+        System.out.println(adaptar2.peek()); //should be null
         adaptar2.addLast("two");
         adaptar2.addFirst("one");
         adaptar2.addLast("three");
